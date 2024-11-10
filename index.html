@@ -3,196 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growmate</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Growmate - Smart Farming Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header and Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <span class="logo-text">Growmate</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#story" class="nav-link">Our Story</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main Section -->
-    <section id="home">
-        <div class="container">
-            <h1>Welcome to Growmate</h1>
-            <p>Empowering farmers with technology for a sustainable future.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Revolutionizing Agriculture with AI</h1>
+                <p class="hero-text">Empowering farmers with smart technology for sustainable farming and better yields.</p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn btn-primary">Explore Features</a>
+                    <a href="#story" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/600/400" alt="Smart Farming">
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <div class="container" id="features">
-        <h2 class="section-title">Features</h2>
-        <div class="features-grid">
-            <!-- Previous features code remains the same -->
-            <div class="feature">
-                <h3>Feature 1</h3>
-                <p>Description of feature 1.</p>
-            </div>
-            <div class="feature">
-                <h3>Feature 2</h3>
-                <p>Description of feature 2.</p>
-            </div>
-            <div class="feature">
-                <h3>Feature 3</h3>
-                <p>Description of feature 3.</p>
-            </div>
-            <!-- Add more features as needed -->
-        </div>
-    </div>
-
-    <!-- New Team Story Section -->
-    <section class="team-story" id="story">
+    <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Our Story</h2>
+            <h2 class="section-title">Smart Features for Modern Farming</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Plant Health Analysis</h3>
+                    <p>AI-powered disease detection and health monitoring for your crops.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Integration</h3>
+                    <p>Real-time weather updates and smart agricultural recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Smart Predictions</h3>
+                    <p>Data-driven insights for optimal planting and harvesting times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Story Section -->
+    <section id="story" class="team-story">
+        <div class="container">
+            <h2 class="section-title">The Minds Behind Growmate</h2>
             <div class="story-content">
                 <p class="story-text">
-                    Growmate was created by a group of students passionate about solving the challenges farmers face with soil and plant health. We developed tools that provide instant support and promote learning in agriculture. By sharing knowledge and earning rewards, farmers can enhance their skills and make informed decisions. Together, we envision a thriving agricultural community dedicated to sustainability.
+                    Born from a shared vision of revolutionizing agriculture, Growmate was created by passionate students determined to bridge the gap between technology and farming. Our journey began with a simple goal: to make advanced agricultural technology accessible to every farmer.
                 </p>
             </div>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="/api/placeholder/150/150" alt="Nambu Harisaran" class="member-image">
+                    <div class="member-image-wrapper">
+                        <img src="/api/placeholder/150/150" alt="Nambu Harisaran">
+                    </div>
                     <h3>Nambu Harisaran</h3>
-                    <a href="/blog" class="member-link">Read Posts</a>
+                    <p class="member-role">Lead Developer</p>
+                    <a href="/blog" class="member-link">Read Posts <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="team-member">
-                    <img src="/api/placeholder/150/150" alt="Sushmaa" class="member-image">
+                    <div class="member-image-wrapper">
+                        <img src="/api/placeholder/150/150" alt="Sushmaa">
+                    </div>
                     <h3>Sushmaa</h3>
-                    <a href="/blog" class="member-link">Read Posts</a>
+                    <p class="member-role">UI/UX Designer</p>
+                    <a href="/blog" class="member-link">Read Posts <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="team-member">
-                    <img src="/api/placeholder/150/150" alt="Rakshan" class="member-image">
+                    <div class="member-image-wrapper">
+                        <img src="/api/placeholder/150/150" alt="Rakshan">
+                    </div>
                     <h3>Rakshan</h3>
-                    <a href="/blog" class="member-link">Read Posts</a>
+                    <p class="member-role">AI Specialist</p>
+                    <a href="/blog" class="member-link">Read Posts <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="team-member">
-                    <img src="/api/placeholder/150/150" alt="Sujith" class="member-image">
+                    <div class="member-image-wrapper">
+                        <img src="/api/placeholder/150/150" alt="Sujith">
+                    </div>
                     <h3>Sujith</h3>
-                    <a href="/blog" class="member-link">Read Posts</a>
+                    <p class="member-role">Data Scientist</p>
+                    <a href="/blog" class="member-link">Read Posts <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="team-member">
-                    <img src="/api/placeholder/150/150" alt="Karsini" class="member-image">
+                    <div class="member-image-wrapper">
+                        <img src="/api/placeholder/150/150" alt="Karsini">
+                    </div>
                     <h3>Karsini</h3>
-                    <a href="/blog" class="member-link">Read Posts</a>
+                    <p class="member-role">Backend Developer</p>
+                    <a href="/blog" class="member-link">Read Posts <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="team-member">
-                    <img src="/api/placeholder/150/150" alt="Kumaran" class="member-image">
+                    <div class="member-image-wrapper">
+                        <img src="/api/placeholder/150/150" alt="Kumaran">
+                    </div>
                     <h3>Kumaran</h3>
-                    <a href="/blog" class="member-link">Read Posts</a>
+                    <p class="member-role">ML Engineer</p>
+                    <a href="/blog" class="member-link">Read Posts <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="team-member">
-                    <img src="/api/placeholder/150/150" alt="Varshini" class="member-image">
+                    <div class="member-image-wrapper">
+                        <img src="/api/placeholder/150/150" alt="Varshini">
+                    </div>
                     <h3>Varshini</h3>
-                    <a href="/blog" class="member-link">Read Posts</a>
+                    <p class="member-role">Product Manager</p>
+                    <a href="/blog" class="member-link">Read Posts <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="team-member">
-                    <img src="/api/placeholder/150/150" alt="Mokshitha" class="member-image">
+                    <div class="member-image-wrapper">
+                        <img src="/api/placeholder/150/150" alt="Mokshitha">
+                    </div>
                     <h3>Mokshitha</h3>
-                    <a href="/blog" class="member-link">Read Posts</a>
+                    <p class="member-role">Research Lead</p>
+                    <a href="/blog" class="member-link">Read Posts <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer id="contact">
+    <footer id="contact" class="footer">
         <div class="container">
-            <p>&copy; 2024 Growmate. All rights reserved.</p>
-            <p><a href="mailto:support@growmate.com">Contact Us</a></p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Growmate</h3>
+                    <p>Empowering farmers with technology for a sustainable future.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> support@growmate.com</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Growmate. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Styles -->
     <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset & Base Styles */
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
         .container {
-            width: 90%;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 1.5rem;
         }
 
-        /* Navigation */
-        nav ul {
-            list-style-type: none;
+        /* Header & Navigation */
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
             display: flex;
-            justify-content: space-around;
-            padding: 1rem;
-            background-color: #333;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
         }
 
-        nav ul li a {
-            color: #fff;
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c5282;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: #4a5568;
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
         }
 
-        /* Section Titles */
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-top: 2rem;
-            color: #333;
+        .nav-link:hover {
+            color: #2c5282;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 4rem;
+            background: linear-gradient(135deg, #f6f9fc 0%, #e9f2ff 100%);
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: #1a365d;
+        }
+
+        .hero-text {
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: #2c5282;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: #2c5282;
+            border: 2px solid #2c5282;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
         /* Features Section */
-        .features-grid {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
+        .features {
+            padding: 6rem 0;
+            background: #fff;
         }
 
-        .feature {
-            flex: 1;
-            background: #f9f9f9;
-            padding: 1.5rem;
-            border-radius: 10px;
+        .section-title {
+            font-size: 2.5rem;
             text-align: center;
+            color: #1a365d;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 1rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #2c5282;
+            margin-bottom: 1.5rem;
         }
 
         /* Team Story Section */
         .team-story {
-            background: #f0f9f0;
-            padding: 4rem 0;
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #f6f9fc 0%, #e9f2ff 100%);
         }
 
         .story-content {
             max-width: 800px;
-            margin: 0 auto 3rem;
+            margin: 0 auto 4rem;
             text-align: center;
         }
 
         .story-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #444;
+            font-size: 1.25rem;
+            color: #4a5568;
         }
 
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
         }
 
         .team-member {
+            background: #fff;
+            border-radius: 1rem;
+            padding: 2rem;
             text-align: center;
-            background: white;
-            padding: 1.5rem;
-            border-radius: 15px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s;
         }
@@ -201,19 +382,32 @@
             transform: translateY(-5px);
         }
 
-        .member-image {
+        .member-image-wrapper {
             width: 150px;
             height: 150px;
+            margin: 0 auto 1.5rem;
             border-radius: 50%;
-            margin-bottom: 1rem;
+            overflow: hidden;
+            border: 3px solid #2c5282;
+        }
+
+        .member-image-wrapper img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
 
+        .member-role {
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+
         .member-link {
-            display: inline-block;
-            color: #4CAF50;
+            color: #2c5282;
             text-decoration: none;
-            margin-top: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             font-weight: 500;
         }
 
@@ -222,21 +416,12 @@
         }
 
         /* Footer */
-        footer {
-            background-color: #333;
+        .footer {
+            background: #1a365d;
             color: #fff;
-            text-align: center;
-            padding: 1rem;
+            padding: 4rem 0 2rem;
         }
 
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</body>
-</html>
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, min
