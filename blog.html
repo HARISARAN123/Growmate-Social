@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growmate Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h1 class="section-title">Growmate Blog</h1>
+
+            <!-- Main Blog Grid -->
+            <main class="blog-grid">
+                <!-- Featured Post -->
+                <article class="blog-card featured-post">
+                    <img src="/api/placeholder/800/400" alt="Team Story" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">Our Story</span>
+                        <h2 class="blog-title">The Birth of Growmate: A Student-Led Agricultural Revolution</h2>
+                        <p class="blog-excerpt">How a group of passionate students came together to revolutionize farming with AI technology.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="far fa-users"></i> Team Growmate</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Other Blog Cards -->
+                <article class="blog-card">
+                    <img src="/api/placeholder/800/400" alt="AI Development" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">Technology</span>
+                        <h2 class="blog-title">Developing Growmate's Core AI Engine</h2>
+                        <p class="blog-excerpt">Our journey in creating an AI system that understands plant diseases and soil health.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 14, 2024</span>
+                            <span><i class="far fa-user"></i> Nambu Harisaran</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="/api/placeholder/800/400" alt="UI Design" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">User Experience</span>
+                        <h2 class="blog-title">Designing for Farmers: A User-Centric Approach</h2>
+                        <p class="blog-excerpt">Creating an interface that makes advanced technology accessible to every farmer.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 13, 2024</span>
+                            <span><i class="far fa-user"></i> Sushmaa</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="/api/placeholder/800/400" alt="Machine Learning" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">Research</span>
+                        <h2 class="blog-title">Improving Crop Recommendations with Machine Learning</h2>
+                        <p class="blog-excerpt">How we're using data to help farmers make better crop choices.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 12, 2024</span>
+                            <span><i class="far fa-user"></i> Rakshan</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Continue with similar blog cards for each team member... -->
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Team Authors</h3>
+                    <ul class="category-list">
+                        <li><a href="#">Nambu Harisaran <span>(5)</span></a></li>
+                        <li><a href="#">Sushmaa <span>(4)</span></a></li>
+                        <li><a href="#">Rakshan <span>(3)</span></a></li>
+                        <li><a href="#">Sujith <span>(4)</span></a></li>
+                        <li><a href="#">Karsini <span>(3)</span></a></li>
+                        <li><a href="#">Kumaran <span>(4)</span></a></li>
+                        <li><a href="#">Varshini <span>(3)</span></a></li>
+                        <li><a href="#">Mokshitha <span>(4)</span></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Styles -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-category {
+            display: inline-block;
+            font-size: 0.875rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-excerpt {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .blog-meta {
+            font-size: 0.875rem;
+            color: #777;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: #4CAF50;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Featured Post Styles */
+        .featured-post {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #1a237e, #4caf50);
+            color: white;
+        }
+
+        .featured-post .blog-title,
+        .featured-post .blog-excerpt,
+        .featured-post .blog-meta {
+            color: white;
+        }
+
+        .featured-post .read-more {
+            color: #cddc39;
+        }
+
+        .featured-post .blog-category {
+            background: #cddc39;
+            color: #1a237e;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .sidebar-title {
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .category-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .category-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .category-list li a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .category-list li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+</html>
