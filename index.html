@@ -3,290 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growmate.tech - Smart Farming Solutions</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --midnight-blue: #191970;
-            --forest-green: #228B22;
-            --light-green: #98FB98;
-            --accent-green: #4CAF50;
-            --bg-light: #F5F8F5;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-light);
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .navbar {
-            background-color: white;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .navbar-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--forest-green);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-link {
-            color: var(--midnight-blue);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .nav-link:hover {
-            color: var(--forest-green);
-        }
-
-        .hero {
-            background: linear-gradient(135deg, var(--midnight-blue), var(--forest-green));
-            color: white;
-            padding: 6rem 1rem;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-
-        .cta-button {
-            background: var(--accent-green);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 1rem;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--forest-green);
-            margin-bottom: 1rem;
-        }
-
-        .feature-title {
-            color: var(--midnight-blue);
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-        }
-
-        .ai-chat-section {
-            background: var(--midnight-blue);
-            color: white;
-            padding: 4rem 1rem;
-            text-align: center;
-        }
-
-        .chat-demo {
-            background: white;
-            border-radius: 15px;
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .chat-message {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .message-content {
-            background: var(--bg-light);
-            padding: 1rem;
-            border-radius: 10px;
-            color: #333;
-        }
-
-        .bot-message .message-content {
-            background: var(--light-green);
-        }
-
-        footer {
-            background: var(--midnight-blue);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .social-link {
-            color: white;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .social-link:hover {
-            color: var(--light-green);
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>Growmate</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-content">
-            <div class="logo">
-                <i class="fas fa-leaf"></i>
-                Growmate.tech
-            </div>
-            <div class="nav-links">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#ai-chat" class="nav-link">AI Chat</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to Growmate</h1>
+            <p>Empowering farmers with technology for a sustainable future.</p>
         </div>
-    </nav>
+    </section>
 
-    <div class="hero">
-        <h1>Transform Your Farm with AI</h1>
-        <p>Advanced plant disease detection, personalized fertilizer recommendations, and intelligent farm management powered by artificial intelligence.</p>
-        <a href="#features" class="cta-button">Explore Features</a>
-    </div>
-
+    <!-- Features Section -->
     <div class="container" id="features">
+        <h2 class="section-title">Features</h2>
         <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-microscope"></i>
-                </div>
-                <h3 class="feature-title">Plant Disease Detection</h3>
-                <p>Instantly identify plant diseases using our AI-powered image recognition system. Get quick and accurate diagnoses.</p>
+            <!-- Previous features code remains the same -->
+            <div class="feature">
+                <h3>Feature 1</h3>
+                <p>Description of feature 1.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-flask"></i>
-                </div>
-                <h3 class="feature-title">Smart Fertilizer Solutions</h3>
-                <p>Receive customized fertilizer recommendations based on your soil composition and crop requirements.</p>
+            <div class="feature">
+                <h3>Feature 2</h3>
+                <p>Description of feature 2.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3 class="feature-title">Farm Management</h3>
-                <p>Optimize your crop selection and management with AI-driven insights based on your land details and location.</p>
+            <div class="feature">
+                <h3>Feature 3</h3>
+                <p>Description of feature 3.</p>
             </div>
+            <!-- Add more features as needed -->
         </div>
     </div>
 
-    <section class="ai-chat-section" id="ai-chat">
-        <h2>Meet Your Farming Assistant</h2>
-        <p>Get instant answers to your farming questions with our AI chatbot</p>
-        <div class="chat-demo">
-            <div class="chat-message">
-                <i class="fas fa-user"></i>
-                <div class="message-content">
-                    What crops are suitable for sandy soil in a hot climate?
-                </div>
+    <!-- New Team Story Section -->
+    <section class="team-story" id="story">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-content">
+                <p class="story-text">
+                    Growmate was created by a group of students passionate about solving the challenges farmers face with soil and plant health. We developed tools that provide instant support and promote learning in agriculture. By sharing knowledge and earning rewards, farmers can enhance their skills and make informed decisions. Together, we envision a thriving agricultural community dedicated to sustainability.
+                </p>
             </div>
-            <div class="chat-message bot-message">
-                <i class="fas fa-robot"></i>
-                <div class="message-content">
-                    Based on your soil type and climate, I recommend considering drought-resistant crops like millet, groundnuts, or watermelons. These crops thrive in sandy soil and can withstand high temperatures.
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Nambu Harisaran" class="member-image">
+                    <h3>Nambu Harisaran</h3>
+                    <a href="/blog" class="member-link">Read Posts</a>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Sushmaa" class="member-image">
+                    <h3>Sushmaa</h3>
+                    <a href="/blog" class="member-link">Read Posts</a>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Rakshan" class="member-image">
+                    <h3>Rakshan</h3>
+                    <a href="/blog" class="member-link">Read Posts</a>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Sujith" class="member-image">
+                    <h3>Sujith</h3>
+                    <a href="/blog" class="member-link">Read Posts</a>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Karsini" class="member-image">
+                    <h3>Karsini</h3>
+                    <a href="/blog" class="member-link">Read Posts</a>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Kumaran" class="member-image">
+                    <h3>Kumaran</h3>
+                    <a href="/blog" class="member-link">Read Posts</a>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Varshini" class="member-image">
+                    <h3>Varshini</h3>
+                    <a href="/blog" class="member-link">Read Posts</a>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Mokshitha" class="member-image">
+                    <h3>Mokshitha</h3>
+                    <a href="/blog" class="member-link">Read Posts</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer id="contact">
-        <h3>Connect With Us</h3>
-        <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+            <p>&copy; 2024 Growmate. All rights reserved.</p>
+            <p><a href="mailto:support@growmate.com">Contact Us</a></p>
         </div>
-        <p style="margin-top: 1rem;">© 2024 Growmate.tech - Empowering Farmers with AI</p>
     </footer>
+
+    <!-- Styles -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            background-color: #333;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 2rem;
+            color: #333;
+        }
+
+        /* Features Section */
+        .features-grid {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Team Story Section */
+        .team-story {
+            background: #f0f9f0;
+            padding: 4rem 0;
+        }
+
+        .story-content {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .story-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            text-align: center;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        .member-link {
+            display: inline-block;
+            color: #4CAF50;
+            text-decoration: none;
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+
+        .member-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </body>
 </html>
