@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growmate.tech - Smart Farming Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --midnight-blue: #191970;
+            --forest-green: #228B22;
+            --light-green: #98FB98;
+            --accent-green: #4CAF50;
+            --bg-light: #F5F8F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--forest-green);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--midnight-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: var(--forest-green);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--midnight-blue), var(--forest-green));
+            color: white;
+            padding: 6rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            background: var(--accent-green);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--forest-green);
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            color: var(--midnight-blue);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .ai-chat-section {
+            background: var(--midnight-blue);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .chat-demo {
+            background: white;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .chat-message {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .message-content {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 10px;
+            color: #333;
+        }
+
+        .bot-message .message-content {
+            background: var(--light-green);
+        }
+
+        footer {
+            background: var(--midnight-blue);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-link:hover {
+            color: var(--light-green);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                Growmate.tech
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#ai-chat" class="nav-link">AI Chat</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Transform Your Farm with AI</h1>
+        <p>Advanced plant disease detection, personalized fertilizer recommendations, and intelligent farm management powered by artificial intelligence.</p>
+        <a href="#features" class="cta-button">Explore Features</a>
+    </div>
+
+    <div class="container" id="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <h3 class="feature-title">Plant Disease Detection</h3>
+                <p>Instantly identify plant diseases using our AI-powered image recognition system. Get quick and accurate diagnoses.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3 class="feature-title">Smart Fertilizer Solutions</h3>
+                <p>Receive customized fertilizer recommendations based on your soil composition and crop requirements.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">Farm Management</h3>
+                <p>Optimize your crop selection and management with AI-driven insights based on your land details and location.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="ai-chat-section" id="ai-chat">
+        <h2>Meet Your Farming Assistant</h2>
+        <p>Get instant answers to your farming questions with our AI chatbot</p>
+        <div class="chat-demo">
+            <div class="chat-message">
+                <i class="fas fa-user"></i>
+                <div class="message-content">
+                    What crops are suitable for sandy soil in a hot climate?
+                </div>
+            </div>
+            <div class="chat-message bot-message">
+                <i class="fas fa-robot"></i>
+                <div class="message-content">
+                    Based on your soil type and climate, I recommend considering drought-resistant crops like millet, groundnuts, or watermelons. These crops thrive in sandy soil and can withstand high temperatures.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p style="margin-top: 1rem;">© 2024 Growmate.tech - Empowering Farmers with AI</p>
+    </footer>
+</body>
+</html>
